@@ -1,5 +1,4 @@
-//何回繰り返しても一回目ですべて正しい答えになった。
-//なので繰り返し回数が一回になるように工夫した。
+//なので繰くり返し回数を減らす工夫をした。
 package perceptron;
 
 public class Perceptron_main {
@@ -17,7 +16,7 @@ public class Perceptron_main {
 		//ランダムに学習データを選び、指定ループ数学習を実施
 		//学習
 		int index;
-		for(int i = 0; i < 1; i++){
+		for(int i = 0; i < 15; i++){
 			index = (int)(Math.random()*4);//0から３の乱数発生
 			plib.getParameter(input[index], output[index]);
 			System.out.println("index : "+i+"nu = "+nu[0]+", "+nu[1]);
